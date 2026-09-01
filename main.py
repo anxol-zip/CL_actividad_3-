@@ -1,3 +1,5 @@
+# Actividad 3. Angel Rugerio Jiménez. #201720 31/08/2026
+
 from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import List
