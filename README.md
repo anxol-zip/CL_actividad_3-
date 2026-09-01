@@ -88,7 +88,7 @@ llamó con `k = 8` y del resultado se tomaron los primeros 8 elementos en **orde
 | $M^*$ | $[\lambda, b, aa, bb, aab, baa, bbb, aaaa]$ |
 
 Para $(LM) \cup (M^* \cap L^2)$ se reutilizaron los resultados ya obtenidos de $L \cdot M$ y de
-$L^2$ (= `/lenguajes/concatenar` con `L` y `M` ambos iguales a $L$), y se calculó $M^*$ completo
+$L^2$ (= concatenar con `L` y `M` iguales a $L$), y se calculó $M^*$ completo
 (no solo los primeros 8) para la intersección:
 
 | Paso | Resultado |
@@ -96,13 +96,3 @@ $L^2$ (= `/lenguajes/concatenar` con `L` y `M` ambos iguales a $L$), y se calcul
 | $L^2$ | $\{\lambda, a, b, aa, ab, ba, bb\}$ |
 | $M^* \cap L^2$ | $\{\lambda, b, aa, bb\}$ |
 | $(LM) \cup (M^* \cap L^2)$ | $\{\lambda, b, aa, ab, bb, aaa, baa\}$ |
-
-### Cadenas (ejemplo)
-
-Con `x = "hola"`, `y = "mundo"`, `n = 3`:
-
-| Operación | Resultado |
-|---|---|
-| `concatenar("hola", "mundo")` | `"holamundo"` |
-| `unir("hola", "mundo")` | `["hola", "mundo"]` |
-| `potencia("ab", 3)` | `"ababab"` |
